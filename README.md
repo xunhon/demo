@@ -1,9 +1,21 @@
-# Demo
+# 待辦事項小助手
 
-待辦事項小助手專案。
+使用 Python Flask 實作，支援新增、刪除、完成、恢復與列出待辦事項。
 
-## Skills
+## 啟動
 
-- `skills/web-article-to-json/SKILL.md`：將使用者提供的網頁文章整理成 JSON，記錄網址、標題、作者、發佈時間與繁體中文摘要。
-- `skills/todo-management/SKILL.md`：管理待辦事項，包括新增、刪除、完成、恢復與列出。
-- `skills/todo-code-modification/SKILL.md`：修改待辦事項相關的程式碼、功能或頁面，並執行適用的驗證。
+```bash
+pip install flask
+python app.py
+```
+
+開啟 `http://127.0.0.1:5000`。
+
+資料會儲存在專案根目錄的 `todos.json`。
+
+## 專案結構
+
+- `app.py`：Flask 主程式
+- `templates/index.html`：HTML/CSS 頁面
+- `todos.json`：待辦事項資料，第一次新增時自動建立
+- `skills/`：專案使用的 AI skills
